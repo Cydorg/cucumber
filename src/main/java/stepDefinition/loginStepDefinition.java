@@ -5,6 +5,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -26,9 +27,9 @@ public class loginStepDefinition
     @When("^title of login page is CRMPRO$")
     public void title_of_login_page_is_CRMPRO()
     {
-//        String title = driver.getTitle();
-//        System.out.println(title);
-//        Assert.assertEquals("CRMPRO  - CRM software for customer relationship management, sales, and support.","title");
+        String title = driver.getTitle();
+        System.out.println(title);
+        Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.",title);
     }
 
     @Then("^user enters username and password$")
@@ -49,9 +50,9 @@ public class loginStepDefinition
     @And("^user is on home page$")
     public void user_is_on_home_page()
     {
-//        String title=driver.getTitle();
-//        System.out.println("Home page title::"+title);
-//        Assert.assertEquals("CRMPRO","title");
+        String title=driver.getTitle();
+        System.out.println("Home page title::"+title);
+        Assert.assertEquals("CRMPRO",title);
 
     }
 }
