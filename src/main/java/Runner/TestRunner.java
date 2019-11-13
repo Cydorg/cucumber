@@ -6,10 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:/Users/Mac/Cydorg-automation/cydorg-selenium-cucumber/src/main/java/Features"
-        ,glue={"stepDefinition"}
+        features = "C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features"
+        ,glue={"stepDefinition"},
+        tags={"@facebook"}
+
 
 )
+
 
 public class TestRunner
 {
