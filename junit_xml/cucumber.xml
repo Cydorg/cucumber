@@ -1,10 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.088045">
-<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="14.088045">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="28.233814">
+<testcase classname="Free CRM create contacts" name="Free CRM create a new contact scenario" time="14.546169">
 <system-out><![CDATA[Given User Enter Login Page.................................................passed
 When title of login page is CRMPRO..........................................passed
 Then user enters "aswathi" and "achukannan".................................passed
 And user click login button.................................................passed
 And user is on home page....................................................passed
+Then user moves to New Contact page.........................................passed
+Then user enters contact details "tom" and "peter" and "manager"............passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM create contacts" name="Free CRM create a new contact scenario 2" time="13.687645">
+<system-out><![CDATA[Given User Enter Login Page.................................................passed
+When title of login page is CRMPRO..........................................passed
+Then user enters "aswathi" and "achukannan".................................passed
+And user click login button.................................................passed
+And user is on home page....................................................passed
+Then user moves to New Contact page.........................................passed
+Then user enters contact details "david" and "thomas" and "team lead".......passed
+Then close the browser......................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
