@@ -31,12 +31,14 @@ public class loginStepDefinition
         System.out.println(title);
         Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.",title);
     }
-
-    @Then("^user enters username and password$")
-    public void user_enters_username_and_password()
+    //REGULAR EXPRESSION
+    //1) \"([^\"]*)\"
+    //2) \"(.*)\"
+    @Then("^user enters \"(.*)\" and \"(.*)\"$")
+    public void user_enters_username_and_password(String username,String password)
     {
-        driver.findElement(By.name("username")).sendKeys("aswathi");
-        driver.findElement(By.name("password")).sendKeys("achukannan");
+        driver.findElement(By.name("username")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
     }
 
     @And("^user click login button$")

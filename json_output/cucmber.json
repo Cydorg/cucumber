@@ -1,0 +1,104 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Free CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10928872000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enter Login Page",
+            "match": {
+              "location": "loginStepDefinition.User_Enter_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68809200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "title of login page is CRMPRO",
+            "match": {
+              "location": "loginStepDefinition.title_of_login_page_is_CRMPRO()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 606387800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters \"aswathi\" and \"achukannan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aswathi",
+                  "offset": 13
+                },
+                {
+                  "val": "achukannan",
+                  "offset": 27
+                }
+              ],
+              "location": "loginStepDefinition.user_enters_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2471941500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click login button",
+            "match": {
+              "location": "loginStepDefinition.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12034800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on home page",
+            "match": {
+              "location": "loginStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@CRM"
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Login Feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CRM"
+      }
+    ]
+  }
+]

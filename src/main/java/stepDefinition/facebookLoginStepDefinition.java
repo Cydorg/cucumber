@@ -1,5 +1,6 @@
 package stepDefinition;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -61,6 +62,19 @@ public class facebookLoginStepDefinition
         driver.findElement(By.xpath("//select[@id='day']")).sendKeys("10");
         driver.findElement(By.xpath("//select[@id='year']")).sendKeys("1991");
     }
+
+    @Then("^select the Gender$")
+    public void select_the_Gender()
+    {
+        driver.findElement(By.xpath("//input[@value='2']")).click();
+    }
+
+    @And("^user click Sign Up$")
+    public void  user_click_Sign_Up()
+    {
+        driver.findElement(By.xpath("//button[@name='websubmit']")).click();
+    }
+
 
 
 }

@@ -12,6 +12,6 @@ Feature:Facebook LogIn
     Then user enter email again
     Then user enter New password
     Then user enter Birthday
-#    Then select the Gender
-#    And user click Sign Up
+    Then select the Gender
+    And  user click Sign Up
 #    And user enter on home page
