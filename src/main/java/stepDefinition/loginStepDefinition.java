@@ -11,6 +11,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.concurrent.TimeUnit;
 
 public class loginStepDefinition
 {
@@ -31,12 +34,14 @@ public class loginStepDefinition
         System.out.println(title);
         Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.",title);
     }
-
-    @Then("^user enters username and password$")
-    public void user_enters_username_and_password()
+    //REGULAR EXPRESSION
+    //1) \"([^\"]*)\"
+    //2) \"(.*)\"
+    @Then("^user enters \"(.*)\" and \"(.*)\"$")
+    public void user_enters_username_and_password(String username,String password)
     {
-        driver.findElement(By.name("username")).sendKeys("aswathi");
-        driver.findElement(By.name("password")).sendKeys("achukannan");
+        driver.findElement(By.name("username")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
     }
 
     @And("^user click login button$")
@@ -54,6 +59,32 @@ public class loginStepDefinition
         System.out.println("Home page title::"+title);
         Assert.assertEquals("CRMPRO",title);
 
+    }
+
+    @Then("^user moves to New Contact page$")
+    public void user_moves_to_New_Contact_page()
+    {
+     driver.switchTo().frame("mainpanel");
+     Actions action = new Actions(driver);
+     action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
+     driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
+    }
+
+    @Then("^user enters contact details \"(.*)\" and \"(.*)\" and \"(.*)\"$")
+    public void user_enters_contact_details(String firstname,String lastname,String position)
+    {
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+       driver.findElement(By.xpath("//input[@id='first_name']")).sendKeys(firstname);
+       driver.findElement(By.xpath("//input[@id='surname']")).sendKeys(lastname);
+       driver.findElement(By.xpath("//input[@id='company_position']")).sendKeys(position);
+       driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
+
+    }
+
+    @Then("^close the browser$")
+    public void close_the_browser()
+    {
+        driver.quit();
     }
 }
 

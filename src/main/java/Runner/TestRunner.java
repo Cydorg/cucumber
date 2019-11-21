@@ -6,10 +6,16 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:/Users/Mac/Cydorg-automation/cydorg-selenium-cucumber/src/main/java/Features"
-        ,glue={"stepDefinition"}
+        features = {"C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/contacts.feature"}
+        ,glue={"stepDefinition"},
+        //tags={"@CRM"},
+        format={"pretty","html:test-outout","junit:junit_xml/cucumber.xml","json:json_output/cucmber.json"},
+        dryRun=false,
+        monochrome=true
+
 
 )
+
 
 public class TestRunner
 {
