@@ -34,6 +34,7 @@ public class DealsStepDefinition
         System.out.println(title);
         Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.",title);
     }
+    //USED DATA TABLES
     @Then("^user enters username and password$")
     public void user_enters_username_and_password(DataTable credentials)
     {
@@ -65,13 +66,16 @@ public class DealsStepDefinition
         driver.findElement(By.xpath("//a[contains(text(),'New Deal')]")).click();
     }
     @Then("^user enters deal details$")
-    public void user_enters_deal_details(DataTable dealData)
-    {
+    public void user_enters_deal_details(DataTable dealData) throws InterruptedException {
         List<List<String>> dealValues =dealData.raw();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+        Thread.sleep(5000);
+        //driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//input[@id='title']")).sendKeys(dealValues.get(0).get(0));
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//input[@id='amount']")).sendKeys(dealValues.get(0).get(1));
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//input[@id='probability']")).sendKeys(dealValues.get(0).get(2));
+        //Thread.sleep(5000);
         driver.findElement(By.xpath("//input[@id='commission']")).sendKeys(dealValues.get(0).get(3));
 
     }

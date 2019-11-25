@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.931354">
-<testcase classname="Deal data creation" name="Free CRM create a new deal scenario" time="20.931354">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.018543">
+<testcase classname="Deal data creation" name="Free CRM create a new deal scenario" time="29.018543">
 <system-out><![CDATA[Given User Enters Login Page................................................passed
 When title of login page CRMPRO.............................................passed
 Then user enters username and password......................................passed

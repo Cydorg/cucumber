@@ -78,56 +78,56 @@ formatter.match({
   "location": "DealsStepDefinition.User_Enters_Login_Page()"
 });
 formatter.result({
-  "duration": 13139326700,
+  "duration": 9408398600,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepDefinition.title_of_login_page_CRMPRO()"
 });
 formatter.result({
-  "duration": 65389200,
+  "duration": 15453600,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepDefinition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 673639600,
+  "duration": 833141300,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepDefinition.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 4336903700,
+  "duration": 2297103400,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepDefinition.user_is_in_home_page()"
 });
 formatter.result({
-  "duration": 11281100,
+  "duration": 13238600,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepDefinition.user_moves_to_New_Deals_page()"
 });
 formatter.result({
-  "duration": 375162000,
+  "duration": 332046800,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepDefinition.user_enters_deal_details(DataTable)"
 });
 formatter.result({
-  "duration": 1562429600,
+  "duration": 15381449000,
   "status": "passed"
 });
 formatter.match({
   "location": "DealsStepDefinition.closes_the_browser()"
 });
 formatter.result({
-  "duration": 767221900,
+  "duration": 737711500,
   "status": "passed"
 });
 });
