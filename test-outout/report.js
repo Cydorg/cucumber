@@ -1,133 +1,61 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/deals.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/hooks.feature");
 formatter.feature({
   "line": 1,
-  "name": "Deal data creation",
+  "name": "Free CRM app test",
   "description": "",
-  "id": "deal-data-creation",
+  "id": "free-crm-app-test",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 455400,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Free CRM create a new deal scenario",
+  "name": "free crm create deal test",
   "description": "",
-  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "id": "free-crm-app-test;free-crm-create-deal-test",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
-  "name": "User Enters Login Page",
+  "line": 4,
+  "name": "user is on deal page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "title of login page CRMPRO",
+  "line": 5,
+  "name": "user fills the deals form",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "user enters username and password",
-  "rows": [
-    {
-      "cells": [
-        "aswathi",
-        "achukannan"
-      ],
-      "line": 8
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user clicks login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "user is in home page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "user moves to New Deals page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "user enters deal details",
-  "rows": [
-    {
-      "cells": [
-        "test deal",
-        "1000",
-        "50",
-        "10"
-      ],
-      "line": 14
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "closes the browser",
+  "line": 6,
+  "name": "deal is created",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealsStepDefinition.User_Enters_Login_Page()"
+  "location": "Hooks_stepdefinition.user_is_on_deal_page()"
 });
 formatter.result({
-  "duration": 9408398600,
+  "duration": 308538000,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealsStepDefinition.title_of_login_page_CRMPRO()"
+  "location": "Hooks_stepdefinition.user_fills_the_deals_form()"
 });
 formatter.result({
-  "duration": 15453600,
+  "duration": 540300,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealsStepDefinition.user_enters_username_and_password(DataTable)"
+  "location": "Hooks_stepdefinition.deal_is_created()"
 });
 formatter.result({
-  "duration": 833141300,
+  "duration": 415400,
   "status": "passed"
 });
-formatter.match({
-  "location": "DealsStepDefinition.user_clicks_login_button()"
-});
-formatter.result({
-  "duration": 2297103400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepDefinition.user_is_in_home_page()"
-});
-formatter.result({
-  "duration": 13238600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepDefinition.user_moves_to_New_Deals_page()"
-});
-formatter.result({
-  "duration": 332046800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepDefinition.user_enters_deal_details(DataTable)"
-});
-formatter.result({
-  "duration": 15381449000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepDefinition.closes_the_browser()"
-});
-formatter.result({
-  "duration": 737711500,
+formatter.after({
+  "duration": 417500,
   "status": "passed"
 });
 });

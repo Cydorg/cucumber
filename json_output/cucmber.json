@@ -3,136 +3,78 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 455400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_stepdefinition.setUP()"
+            }
+          }
+        ],
         "line": 3,
-        "name": "Free CRM create a new deal scenario",
+        "name": "free crm create deal test",
         "description": "",
-        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+        "id": "free-crm-app-test;free-crm-create-deal-test",
+        "after": [
+          {
+            "result": {
+              "duration": 417500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_stepdefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9408398600,
+              "duration": 308538000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User Enters Login Page",
+            "line": 4,
+            "name": "user is on deal page",
             "match": {
-              "location": "DealsStepDefinition.User_Enters_Login_Page()"
+              "location": "Hooks_stepdefinition.user_is_on_deal_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 15453600,
+              "duration": 540300,
               "status": "passed"
             },
-            "line": 6,
-            "name": "title of login page CRMPRO",
+            "line": 5,
+            "name": "user fills the deals form",
             "match": {
-              "location": "DealsStepDefinition.title_of_login_page_CRMPRO()"
+              "location": "Hooks_stepdefinition.user_fills_the_deals_form()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 833141300,
+              "duration": 415400,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enters username and password",
+            "line": 6,
+            "name": "deal is created",
             "match": {
-              "location": "DealsStepDefinition.user_enters_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "aswathi",
-                  "achukannan"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2297103400,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user clicks login button",
-            "match": {
-              "location": "DealsStepDefinition.user_clicks_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13238600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user is in home page",
-            "match": {
-              "location": "DealsStepDefinition.user_is_in_home_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 332046800,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user moves to New Deals page",
-            "match": {
-              "location": "DealsStepDefinition.user_moves_to_New_Deals_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15381449000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user enters deal details",
-            "match": {
-              "location": "DealsStepDefinition.user_enters_deal_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "test deal",
-                  "1000",
-                  "50",
-                  "10"
-                ],
-                "line": 14
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 737711500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "closes the browser",
-            "match": {
-              "location": "DealsStepDefinition.closes_the_browser()"
+              "location": "Hooks_stepdefinition.deal_is_created()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Deal data creation",
+    "name": "Free CRM app test",
     "description": "",
-    "id": "deal-data-creation",
+    "id": "free-crm-app-test",
     "keyword": "Feature",
-    "uri": "C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/deals.feature"
+    "uri": "C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/hooks.feature"
   }
 ]
