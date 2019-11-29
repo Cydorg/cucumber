@@ -1,8 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.310367">
-<testcase classname="Free CRM app test" name="free crm create deal test" time="0.310367">
-<system-out><![CDATA[Given user is on deal page..................................................passed
-When user fills the deals form..............................................passed
-Then deal is created........................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.386795">
+<testcase classname="Test Tagged Hooks" name="This is First test" time="0.380368">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Tagged Hooks" name="This is Second step" time="0.003081">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Tagged Hooks" name="This is Third step" time="0.003346">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
