@@ -9,15 +9,27 @@ import cucumber.api.java.en.When;
 public class TaggedHooksStepDefinition
 {
     //GLOBAL HOOKS
-    @Before()
+    @Before(order=0)
     public void setUP()
+    {
+    System.out.println("Launch chrome");
+    System.out.println("Enter URL for free CRM app");
+    }
+
+    @After(order=0)
+    public void tearDown()
+    {
+        System.out.println("close the browser");
+    }
+    @Before(order=1)
+    public void setUP1()
     {
         System.out.println("Launch chrome");
         System.out.println("Enter URL for free CRM app");
     }
 
-    @After()
-    public void tearDown()
+    @After(order=1)
+    public void tearDown1()
     {
         System.out.println("close the browser");
     }

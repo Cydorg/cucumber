@@ -6,16 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 389800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks_stepdefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 339200,
+              "duration": 344400,
               "status": "passed"
             },
             "match": {
@@ -24,7 +15,25 @@
           },
           {
             "result": {
-              "duration": 131900,
+              "duration": 163400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 214800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_stepdefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 146500,
               "status": "passed"
             },
             "match": {
@@ -39,7 +48,7 @@
         "after": [
           {
             "result": {
-              "duration": 3967500,
+              "duration": 425600,
               "status": "passed"
             },
             "match": {
@@ -48,20 +57,29 @@
           },
           {
             "result": {
-              "duration": 143600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 103700,
+              "duration": 198000,
               "status": "passed"
             },
             "match": {
               "location": "TaggedHooksStepDefinition.afterFirst()"
+            }
+          },
+          {
+            "result": {
+              "duration": 402000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 435700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.tearDown()"
             }
           }
         ],
@@ -70,7 +88,7 @@
         "steps": [
           {
             "result": {
-              "duration": 374763400,
+              "duration": 368033900,
               "status": "passed"
             },
             "line": 5,
@@ -82,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 132200,
+              "duration": 670900,
               "status": "passed"
             },
             "line": 6,
@@ -94,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 396900,
+              "duration": 409500,
               "status": "passed"
             },
             "line": 7,
@@ -116,16 +134,7 @@
         "before": [
           {
             "result": {
-              "duration": 196100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks_stepdefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 526700,
+              "duration": 1195500,
               "status": "passed"
             },
             "match": {
@@ -134,7 +143,25 @@
           },
           {
             "result": {
-              "duration": 137400,
+              "duration": 602900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3230100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_stepdefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 445000,
               "status": "passed"
             },
             "match": {
@@ -158,20 +185,29 @@
           },
           {
             "result": {
-              "duration": 521500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 429600,
+              "duration": 404000,
               "status": "passed"
             },
             "match": {
               "location": "TaggedHooksStepDefinition.afterSecond()"
+            }
+          },
+          {
+            "result": {
+              "duration": 328300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 303700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.tearDown()"
             }
           }
         ],
@@ -180,7 +216,7 @@
         "steps": [
           {
             "result": {
-              "duration": 398000,
+              "duration": 114500,
               "status": "passed"
             },
             "line": 12,
@@ -192,7 +228,7 @@
           },
           {
             "result": {
-              "duration": 101200,
+              "duration": 388200,
               "status": "passed"
             },
             "line": 13,
@@ -204,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 384200,
+              "duration": 449100,
               "status": "passed"
             },
             "line": 14,
@@ -226,16 +262,7 @@
         "before": [
           {
             "result": {
-              "duration": 216000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks_stepdefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 717600,
+              "duration": 587000,
               "status": "passed"
             },
             "match": {
@@ -244,7 +271,25 @@
           },
           {
             "result": {
-              "duration": 130600,
+              "duration": 759000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 625600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_stepdefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 357700,
               "status": "passed"
             },
             "match": {
@@ -259,7 +304,7 @@
         "after": [
           {
             "result": {
-              "duration": 360000,
+              "duration": 121700,
               "status": "passed"
             },
             "match": {
@@ -268,20 +313,29 @@
           },
           {
             "result": {
-              "duration": 458700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 426100,
+              "duration": 792800,
               "status": "passed"
             },
             "match": {
               "location": "TaggedHooksStepDefinition.afterThird()"
+            }
+          },
+          {
+            "result": {
+              "duration": 116800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 279000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHooksStepDefinition.tearDown()"
             }
           }
         ],
@@ -290,7 +344,7 @@
         "steps": [
           {
             "result": {
-              "duration": 405800,
+              "duration": 306400,
               "status": "passed"
             },
             "line": 18,
@@ -302,7 +356,7 @@
           },
           {
             "result": {
-              "duration": 349300,
+              "duration": 361900,
               "status": "passed"
             },
             "line": 19,
@@ -314,7 +368,7 @@
           },
           {
             "result": {
-              "duration": 281700,
+              "duration": 271700,
               "status": "passed"
             },
             "line": 20,
