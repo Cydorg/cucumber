@@ -1,255 +1,117 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/taggedhooks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/freecrm.feature");
 formatter.feature({
   "line": 1,
-  "name": "Test Tagged Hooks",
+  "name": "Free CRM Application Test",
   "description": "",
-  "id": "test-tagged-hooks",
+  "id": "free-crm-application-test",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 344400,
+  "duration": 434900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 163400,
+  "duration": 326100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 214800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 146500,
+  "duration": 287900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 4,
-  "name": "This is First test",
+  "line": 3,
+  "name": "Validate Free CRM Home Page Test",
   "description": "",
-  "id": "test-tagged-hooks;this-is-first-test",
+  "id": "free-crm-application-test;validate-free-crm-home-page-test",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@First"
-    }
-  ]
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "user opens browser",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "this is the first step",
-  "keyword": "Given "
+  "name": "user is on login page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 6,
-  "name": "this is the second step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "this is the third step",
+  "name": "user logs into app",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+formatter.step({
+  "comments": [
+    {
+      "line": 7,
+      "value": "#Then user clicks on login button"
+    },
+    {
+      "line": 8,
+      "value": "#Then home page is displayed"
+    }
+  ],
+  "line": 9,
+  "name": "validate homepage title",
+  "keyword": "Then "
 });
-formatter.result({
-  "duration": 368033900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-});
-formatter.result({
-  "duration": 670900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 409500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 425600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 198000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 402000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 435700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1195500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 602900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3230100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 445000,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 11,
-  "name": "This is Second step",
-  "description": "",
-  "id": "test-tagged-hooks;this-is-second-step",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
+formatter.step({
+  "comments": [
     {
       "line": 10,
-      "name": "@Second"
+      "value": "#Then validate logged in username"
     }
-  ]
-});
-formatter.step({
-  "line": 12,
-  "name": "this is the first step",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 13,
-  "name": "this is the second step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 14,
-  "name": "this is the third step",
+  ],
+  "line": 11,
+  "name": "closed the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+  "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 114500,
+  "duration": 13989615000,
   "status": "passed"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+  "location": "HomePageSteps.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 388200,
+  "duration": 77037000,
   "status": "passed"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+  "location": "HomePageSteps.user_logs_into_app()"
 });
 formatter.result({
-  "duration": 449100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 386500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 404000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 328300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 303700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 587000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 759000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 625600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 357700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "This is Third step",
-  "description": "",
-  "id": "test-tagged-hooks;this-is-third-step",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 16,
-      "name": "@Third"
-    }
-  ]
-});
-formatter.step({
-  "line": 18,
-  "name": "this is the first step",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 19,
-  "name": "this is the second step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 20,
-  "name": "this is the third step",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
-});
-formatter.result({
-  "duration": 306400,
+  "duration": 4306198000,
   "status": "passed"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+  "location": "HomePageSteps.validate_homepage_title()"
 });
 formatter.result({
-  "duration": 361900,
+  "duration": 14210300,
   "status": "passed"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+  "location": "HomePageSteps.closed_the_browser()"
 });
 formatter.result({
-  "duration": 271700,
+  "duration": 767722600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 121700,
+  "duration": 146500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 792800,
+  "duration": 121300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 116800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 279000,
+  "duration": 176100,
   "status": "passed"
 });
 });

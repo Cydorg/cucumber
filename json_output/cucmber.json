@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 344400,
+              "duration": 434900,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 163400,
+              "duration": 326100,
               "status": "passed"
             },
             "match": {
@@ -24,49 +24,31 @@
           },
           {
             "result": {
-              "duration": 214800,
+              "duration": 287900,
               "status": "passed"
             },
             "match": {
               "location": "Hooks_stepdefinition.setUP()"
             }
-          },
+          }
+        ],
+        "line": 3,
+        "name": "Validate Free CRM Home Page Test",
+        "description": "",
+        "id": "free-crm-application-test;validate-free-crm-home-page-test",
+        "after": [
           {
             "result": {
               "duration": 146500,
               "status": "passed"
             },
             "match": {
-              "location": "TaggedHooksStepDefinition.beforeFirst()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "This is First test",
-        "description": "",
-        "id": "test-tagged-hooks;this-is-first-test",
-        "after": [
-          {
-            "result": {
-              "duration": 425600,
-              "status": "passed"
-            },
-            "match": {
               "location": "Hooks_stepdefinition.tearDown()"
             }
           },
           {
             "result": {
-              "duration": 198000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.afterFirst()"
-            }
-          },
-          {
-            "result": {
-              "duration": 402000,
+              "duration": 121300,
               "status": "passed"
             },
             "match": {
@@ -75,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 435700,
+              "duration": 176100,
               "status": "passed"
             },
             "match": {
@@ -88,309 +70,87 @@
         "steps": [
           {
             "result": {
-              "duration": 368033900,
+              "duration": 13989615000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens browser",
+            "match": {
+              "location": "HomePageSteps.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77037000,
               "status": "passed"
             },
             "line": 5,
-            "name": "this is the first step",
+            "name": "user is on login page",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+              "location": "HomePageSteps.user_is_on_login_page()"
             },
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 670900,
+              "duration": 4306198000,
               "status": "passed"
             },
             "line": 6,
-            "name": "this is the second step",
+            "name": "user logs into app",
             "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 409500,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "this is the third step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+              "location": "HomePageSteps.user_logs_into_app()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@First"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1195500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.setUP()"
-            }
           },
           {
             "result": {
-              "duration": 602900,
+              "duration": 14210300,
               "status": "passed"
             },
+            "comments": [
+              {
+                "line": 7,
+                "value": "#Then user clicks on login button"
+              },
+              {
+                "line": 8,
+                "value": "#Then home page is displayed"
+              }
+            ],
+            "line": 9,
+            "name": "validate homepage title",
             "match": {
-              "location": "TaggedHooksStepDefinition.setUP1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3230100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks_stepdefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 445000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.beforeSecond()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "This is Second step",
-        "description": "",
-        "id": "test-tagged-hooks;this-is-second-step",
-        "after": [
-          {
-            "result": {
-              "duration": 386500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks_stepdefinition.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 404000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.afterSecond()"
-            }
-          },
-          {
-            "result": {
-              "duration": 328300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 303700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 114500,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "this is the first step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 388200,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "this is the second step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 449100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "this is the third step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+              "location": "HomePageSteps.validate_homepage_title()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 10,
-            "name": "@Second"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 587000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.setUP()"
-            }
           },
           {
             "result": {
-              "duration": 759000,
+              "duration": 767722600,
               "status": "passed"
             },
+            "comments": [
+              {
+                "line": 10,
+                "value": "#Then validate logged in username"
+              }
+            ],
+            "line": 11,
+            "name": "closed the browser",
             "match": {
-              "location": "TaggedHooksStepDefinition.setUP1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 625600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks_stepdefinition.setUP()"
-            }
-          },
-          {
-            "result": {
-              "duration": 357700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.beforeThird()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "This is Third step",
-        "description": "",
-        "id": "test-tagged-hooks;this-is-third-step",
-        "after": [
-          {
-            "result": {
-              "duration": 121700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks_stepdefinition.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 792800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.afterThird()"
-            }
-          },
-          {
-            "result": {
-              "duration": 116800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown1()"
-            }
-          },
-          {
-            "result": {
-              "duration": 279000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "TaggedHooksStepDefinition.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 306400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "this is the first step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 361900,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "this is the second step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 271700,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "this is the third step",
-            "match": {
-              "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+              "location": "HomePageSteps.closed_the_browser()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
-            "name": "@Third"
           }
         ]
       }
     ],
-    "name": "Test Tagged Hooks",
+    "name": "Free CRM Application Test",
     "description": "",
-    "id": "test-tagged-hooks",
+    "id": "free-crm-application-test",
     "keyword": "Feature",
-    "uri": "C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/taggedhooks.feature"
+    "uri": "C:/Users/Mac/Cydorg-automation/cucumber/src/main/java/Features/freecrm.feature"
   }
 ]
